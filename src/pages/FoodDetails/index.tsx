@@ -84,6 +84,7 @@ const FoodDetails: React.FC = () => {
 
       const foodFormatted = {
         ...response.data,
+        price: Number(response.data.price),
         quantity: 1,
         formattedPrice: formatValue(response.data.price),
         extras: quantityExtraFormatted,
@@ -156,7 +157,8 @@ const FoodDetails: React.FC = () => {
   const cartTotal = useMemo(() => {
     const extrasInCart = extras.filter(extra => extra.quantity !== 0);
 
-    if (extrasInCart.length === 0) return foodQuantity * food.price;
+    if (extrasInCart.length === 0)
+      return formatValue(foodQuantity * food.price);
 
     const extrasTotal = extrasInCart.reduce(
       (total, item) => total + item.value * item.quantity,
