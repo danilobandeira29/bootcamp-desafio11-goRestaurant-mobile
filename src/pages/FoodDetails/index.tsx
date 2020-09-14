@@ -98,7 +98,11 @@ const FoodDetails: React.FC = () => {
   }, [routeParams]);
 
   function handleIncrementExtra(id: number): void {
-    const incrementExtraQuantity = extras.filter(extra => extra.id === id)[0];
+    const incrementExtraQuantity = extras.find(extra => extra.id === id);
+
+    if (!incrementExtraQuantity) {
+      return;
+    }
 
     const increment = {
       ...incrementExtraQuantity,
@@ -119,9 +123,9 @@ const FoodDetails: React.FC = () => {
   }
 
   function handleDecrementExtra(id: number): void {
-    const decrementExtraQuantity = extras.filter(extra => extra.id === id)[0];
+    const decrementExtraQuantity = extras.find(extra => extra.id === id);
 
-    if (decrementExtraQuantity.quantity === 0) {
+    if (!decrementExtraQuantity || decrementExtraQuantity.quantity === 0) {
       return;
     }
 
@@ -161,7 +165,7 @@ const FoodDetails: React.FC = () => {
       0,
     );
 
-    return foodQuantity * food.price + extrasTotal;
+    return formatValue(foodQuantity * food.price + extrasTotal);
   }, [extras, food, foodQuantity]);
 
   async function handleFinishOrder(): Promise<void> {
