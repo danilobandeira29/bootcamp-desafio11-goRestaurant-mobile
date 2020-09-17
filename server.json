@@ -107,6 +107,25 @@
         }
       ],
       "price": 21.9
+    },
+    {
+      "id": 3,
+      "name": "A la Camarón",
+      "description": "Macarrão com vegetais de primeira linha e camarão dos 7 mares.",
+      "category": 3,
+      "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food3.png",
+      "thumbnail_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-gorestaurant-mobile/camarao.png",
+      "price": 25.9,
+      "quantity": 1,
+      "formattedPrice": "R$25,90",
+      "extras": [
+        {
+          "id": 4,
+          "name": "Bacon",
+          "value": 1.5,
+          "quantity": 0
+        }
+      ]
     }
   ],
   "favorites": [
@@ -118,6 +137,25 @@
       "category": 2,
       "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food2.png",
       "thumbnail_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-gorestaurant-mobile/veggie.png"
+    },
+    {
+      "id": 3,
+      "name": "A la Camarón",
+      "description": "Macarrão com vegetais de primeira linha e camarão dos 7 mares.",
+      "category": 3,
+      "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food3.png",
+      "thumbnail_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-gorestaurant-mobile/camarao.png",
+      "price": 25.9,
+      "quantity": 1,
+      "formattedPrice": "R$25,90",
+      "extras": [
+        {
+          "id": 4,
+          "name": "Bacon",
+          "value": 1.5,
+          "quantity": 0
+        }
+      ]
     }
   ]
 }
