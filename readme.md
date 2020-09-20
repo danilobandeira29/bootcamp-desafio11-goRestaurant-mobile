@@ -14,7 +14,7 @@
 - [Code formatters](#-Code-formatters)
 - [Clone the repository](#-Clone-the-repository)
 - [API Routes](#-API-Routes)
-- [Tests](#Tests)
+- [Tests](#-Tests)
 
 
 ## 📝 About
