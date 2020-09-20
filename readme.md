@@ -14,6 +14,7 @@
 - [Code formatters](#-Code-formatters)
 - [Clone the repository](#-Clone-the-repository)
 - [API Routes](#-API-Routes)
+- [Tests](#Tests)
 
 
 ## 📝 About
@@ -64,7 +65,7 @@ Generated from a template, this application will connect to a fake API, and show
   $ yarn start
 ```
 
-## API Routes
+## 🔃 API Routes
 **Route** `/foods`: Returns all foods registered in the API.
 
 **Route**  `/foods/:id`: Returns a plate of food registered in the API based on the ID.
@@ -74,6 +75,13 @@ Generated from a template, this application will connect to a fake API, and show
 **Route**  `/orders`: Returns all orders registered in the API
 
 **Route**  `/favorites`: Returns all favorite foods registered in the API
+
+## 🧪 Tests
+With the fake api running, run:
+
+```bash
+$ yarn test
+```
 
 ---
 ---
@@ -86,6 +94,7 @@ Generated from a template, this application will connect to a fake API, and show
 - [Formatadores de Código](#-Formatadores-de-Código)
 - [Clonar o Projeto](#-Clonar-o-Projeto)
 - [Rotas da API](#-Rotas-da-API)
+- [Testes](#-Testes)
 
 
 ## 📝 Sobre
@@ -136,7 +145,7 @@ Gerada de um template, essa será uma aplicação que irá se conectar a uma fak
   $ yarn start
 ```
 
-## Rotas da API
+## 🔃 Rotas da API
 **Rota** `/foods`: Retorna todas as comidas cadastradas na API
 
 **Rota** `/foods/:id`: Retorna um prato de comida cadastradas na API baseado no id
@@ -146,6 +155,12 @@ Gerada de um template, essa será uma aplicação que irá se conectar a uma fak
 **Rota** `/orders`: Retorna todas os pedidos que foram cadastrados na API
 
 **Rota** `/favorites`: Retorna todas as comidas favoritas que foram cadastrados na API
+
+## 🧪 Testes
+Com a fake api executando, execute o comando
+```bash
+$ yarn test
+```
 
 ---
 ---
